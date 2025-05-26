@@ -3,9 +3,14 @@
 
 int main()
 {
-	int	fd;
+	int	fd = open("text1.txt", O_RDONLY);
+	char *q = get_next_line(fd);
+	//char *w = get_next_line(fd);
 
-	fd = open("", O_RDONLY);
+	__builtin_printf("%s", q);
+	//__builtin_printf("%s", w);
 
-	get_next_line(fd);
+	free(q);
+	//free(w);
+	close(fd);
 }

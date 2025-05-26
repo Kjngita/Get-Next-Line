@@ -6,7 +6,7 @@
 /*   By: gita <gita@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 21:43:21 by gita              #+#    #+#             */
-/*   Updated: 2025/05/26 21:05:23 by gita             ###   ########.fr       */
+/*   Updated: 2025/05/26 23:41:58 by gita             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,13 @@
 #endif
 
 # include <unistd.h>
+# include <stdlib.h>
 
 char	*get_next_line(int fd);
 
 size_t	ft_strlen(char *s);
 char	*ft_strchr(char *string, int c);
 char	*ft_strjoin(char *s1, char *s2);
+char	*ft_substr(char *s, unsigned int start, size_t len);
 
 #endif
