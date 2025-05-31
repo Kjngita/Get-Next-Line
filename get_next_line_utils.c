@@ -6,7 +6,7 @@
 /*   By: gita <gita@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 19:36:11 by gita              #+#    #+#             */
-/*   Updated: 2025/05/27 00:44:44 by gita             ###   ########.fr       */
+/*   Updated: 2025/05/31 18:37:51 by gita             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ char	*ft_strjoin(char *s1, char *s2)
 		i++;
 	}
 	team[i] = '\0';
-	return (team);
+	return (free (s1), team);
 }
 
 char	*ft_substr(char *s, unsigned int start, size_t len)

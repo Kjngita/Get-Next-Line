@@ -1,16 +1,16 @@
 #include "get_next_line.h"
 #include <fcntl.h>
+#include <stdio.h>
 
 int main()
 {
-	int	fd = open("text1.txt", O_RDONLY);
-	char *q = get_next_line(fd);
-	//char *w = get_next_line(fd);
+	int	fd = open("bestjoke.txt", O_RDONLY);
+	char *line;
 
-	__builtin_printf("%s", q);
-	//__builtin_printf("%s", w);
-
-	free(q);
-	//free(w);
+	while ((line = get_next_line(fd)) != NULL)
+	{
+		printf("%s", line);
+		free(line);
+	}
 	close(fd);
 }
