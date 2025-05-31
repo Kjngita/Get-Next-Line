@@ -6,7 +6,7 @@
 /*   By: gita <gita@student.hive.fi>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 21:43:21 by gita              #+#    #+#             */
-/*   Updated: 2025/05/26 23:41:58 by gita             ###   ########.fr       */
+/*   Updated: 2025/05/31 20:27:18 by gita             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 #ifndef BUFFER_SIZE
-# define BUFFER_SIZE 5
+# define BUFFER_SIZE 1
 #endif
 
 # include <unistd.h>
